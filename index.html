@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/telefone.png" alt="Telefone Roxo">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contatos">
+            <label for="nome">Nome:</label>
+            <input id="nome-contato" required type="text" placeholder="Nome e Sobrenome">
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone-contato" required type="tel" placeholder="(00) 00000-0000">
+
+            <button type="submit">Adicionar+</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!--      Java Script      -->
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+</body>
+</html>
