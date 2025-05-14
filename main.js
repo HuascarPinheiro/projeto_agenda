@@ -3,13 +3,16 @@ const form = document.getElementById('form-contatos');
 const nomeContato = [];
 let linhas = '';
 
+document.addEventListener('DOMContentLoaded', function () {
+    maskPhone();
+});
+
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
     adicionaContato();
     atualizaTabela();
-    maskPhone();
 });
 
 function adicionaContato(){
@@ -24,7 +27,7 @@ function adicionaContato(){
         let linha = '<tr>';
         linha += `<td>${inputNomeContato.value}</td>`;
         linha += `<td>${inputPhoneContato.value}</td>`;
-        linha += '<tr>';
+        linha += '</tr>';
         linhas += linha;
 
     }

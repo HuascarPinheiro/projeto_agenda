@@ -17,7 +17,7 @@
             <input id="nome-contato" required type="text" placeholder="Nome e Sobrenome">
 
             <label for="telefone">Telefone:</label>
-            <input id="telefone-contato" required type="tel" placeholder="(00) 00000-0000">
+            <input id="telefone-contato" pattern="\(\d{2}\)\s?\d{5}-\d{4}" required type="tel" placeholder="(00) 00000-0000">
 
             <button type="submit">Adicionar+</button>
         </form>
@@ -33,8 +33,8 @@
         </table>
     </div>
     <!--      Java Script      -->
-    <script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
